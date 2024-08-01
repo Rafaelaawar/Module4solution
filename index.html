@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <title>Module 4 Solution Starter</title>
   <script>
+    console.log("Script is running");
+
     (function(window) {
       var helloSpeaker = {};
       var speakWord = "Hello";
@@ -27,6 +29,8 @@
     })(window);
 
     (function () {
+      console.log("Main script is running");
+
       var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
 
       for (var i = 0; i < names.length; i++) {
@@ -38,6 +42,7 @@
           helloSpeaker.speak(names[i]);
         }
       }
+
     })();
   </script>
 </head>
