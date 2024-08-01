@@ -3,48 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Module 4 Solution Starter</title>
-  <script>
-    console.log("Script is running");
-
-    (function(window) {
-      var helloSpeaker = {};
-      var speakWord = "Hello";
-
-      helloSpeaker.speak = function(name) {
-        console.log(speakWord + " " + name);
-      };
-
-      window.helloSpeaker = helloSpeaker;
-    })(window);
-
-    (function(window) {
-      var byeSpeaker = {};
-      var speakWord = "Good Bye";
-
-      byeSpeaker.speak = function(name) {
-        console.log(speakWord + " " + name);
-      };
-
-      window.byeSpeaker = byeSpeaker;
-    })(window);
-
-    (function () {
-      console.log("Main script is running");
-
-      var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
-
-      for (var i = 0; i < names.length; i++) {
-        var firstLetter = names[i].charAt(0).toLowerCase();
-
-        if (firstLetter === 'j') {
-          byeSpeaker.speak(names[i]);
-        } else {
-          helloSpeaker.speak(names[i]);
-        }
-      }
-
-    })();
-  </script>
+  <script src="script.js" defer></script>
 </head>
 <body>
   <h1>Module 4 Solution Starter</h1>
